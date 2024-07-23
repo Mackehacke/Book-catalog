@@ -1,0 +1,128 @@
+/* Länk som hämtar typsnitt från Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* === Allmänna koder === */
+
+/* Bakgrundsbilden till webbsidan blir en bild på ett gammalt bibliotek och den ska täcka hela sidan. */
+body {
+  background: url('https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783_1280.jpg')
+    center center fixed; /* Bildkälla: Pixabay (https://pixabay.com/sv/photos/b%c3%b6cker-hyllor-d%c3%b6rr-ing%c3%a5ng-1655783/). */
+  background-size: cover;
+}
+
+/* h1-elementet blir centrliserad och får teckenfamiljen Raleway från Google Fonts. */
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+/* h2-elementet får samma teckenfamilj som h1:an. */
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+}
+
+/* En centraliserad wrapper som är 90% bred, har en brunröd border och rundade hörn. */
+.wrapper {
+  margin: auto;
+  width: 90%;
+  border: 0.5em solid #800020;
+  background-color: #ffffff;
+  border-radius: 2em;
+  padding: 1rem;
+}
+
+/* === Faktarutan === */
+
+/* Text inom span-element får fet stil och Raleway teckenfamiljen. */
+span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+/* Div-elementet som innehåller den valda boken får bredden 40% och blir centraliserad.  */
+.selectedBook {
+  width: 40%;
+  margin: auto;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* === Sökfunktionen === */
+
+/* Div-elementet som innehåller label, sökfältet samt knapp blir centraliserad och får lite padding för avstånd. */
+.searchField {
+  text-align: center;
+  padding: 1rem;
+}
+
+/*  Etiketten tillhörande input-fältet hamnar på sin egen rad och får Raleway teckenfamiljen. */
+label {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+/* Koderna nedan styr designen på input-fältet. */
+input[type='text'] {
+  width: 30%;
+  padding: 0.75rem 0.75rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 0.063rem solid #6b0f15;
+  box-sizing: border-box;
+}
+
+/* Koderna nedan styr designen på knappen. */
+button {
+  background-color: #800020;
+  color: #ffffff;
+  display: block; /* Knappen hamnar på sin egen rad. */
+  padding: 0.875rem 1.25rem;
+  margin: auto; /* Knappen blir centraliserad. */
+  border: none;
+  width: 20%;
+}
+
+/* När knappen hovras över blir den mörkröd och muspekaren får en pointer-effekt. */
+button:hover {
+  background-color: #6b0f15;
+  cursor: pointer;
+}
+
+/* === Tabellen === */
+
+/* Ger tabellen en ram och ger varje del av tabellen mer utrymme. */
+table,
+th,
+td {
+  border: 0.063rem solid #800020;
+  padding: 0.5rem;
+}
+
+/* Tabellen blir centraliserad och får en annan teckenfamilj. */
+table {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* När tabellen hovras över får muspekaren en pointer-effekt för att visa att den är klickbar. */
+table:hover {
+  cursor: pointer;
+}
+
+/* Table head får teckenfamiljen Raleway och fet stil på texten. */
+th {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
